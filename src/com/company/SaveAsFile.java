@@ -12,9 +12,7 @@ public class SaveAsFile {
 
     OutputStream out ;
 
-    public SaveAsFile(String fileName)  {
-        this.fileName = fileName;
-    }
+
 
     public SaveAsFile(String fileName, ArrayList<String> lines) {
         this.fileName = fileName;
@@ -24,7 +22,6 @@ public class SaveAsFile {
     public void savetoFile() throws IOException {
         Path currentRelativePath = Paths.get("");
         String s = currentRelativePath.toAbsolutePath().toString();
-        System.out.println(s);
         out = new FileOutputStream( s+ "\\"+fileName);
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(out));
 

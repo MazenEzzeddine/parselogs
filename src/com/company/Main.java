@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 	// write your code here
-        ArrayList<String> lines =  new ArrayList<>();
+        ArrayList<String> lines;
         ArrayList<String> patterns = new ArrayList<>();
         FileParser fp = new FileParser("C:\\Users\\m.ezzeddine\\Desktop\\Experiments\\FileParser\\logs27.txt");
        lines = fp.readFileLinestoListString();
